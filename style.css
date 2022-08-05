@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+/*### Neutral*/
+
+/*- Very Dark Blue: hsl(234, 12%, 34%)*/
+/*- Grayish Blue: hsl(229, 6%, 66%)*/
+/*- Very Light Gray: hsl(0, 0%, 98%)*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 0%, 98%);
+}
+
+div.center {
+    max-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+}
+
+section.four-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.four-card div.header {
+    text-align: center;
+    max-width: 550px;
+    margin-bottom: 55px;
+}
+
+section.four-card div.header h1 {
+    font-weight: 200;
+    font-size: 2em;
+}
+
+section.four-card div.header h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+section.four-card div.header p {
+    color: hsl(229, 6%, 66%);
+}
+
+section.four-card main.card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+section.four-card div.card {
+    background-color: white;
+    margin: 15px;
+    min-height: 250px;
+    max-width: 350px;
+    border-top: 4px solid;
+    border-radius: 5px 5px 8px 8px;
+    padding: 30px;
+    position: relative;
+    box-shadow: 0 13px 15px 7px rgba(0, 0, 0, 0.1);
+}
+
+section.four-card div.card h1 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+section.four-card div.card p {
+    font-size: 14px;
+    color: hsl(229, 6%, 66%);
+}
+
+section.four-card div.card img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: inherit;
+    user-select: none;
+}
+
+/* TOP BORDER COLORS */
+section.four-card div.card:first-of-type {
+    border-color: hsl(180, 62%, 55%);
+}
+
+section.four-card div.card:nth-of-type(2) {
+    border-color: hsl(0, 78%, 62%);
+}
+
+section.four-card div.card:nth-of-type(3) {
+    border-color: hsl(34, 97%, 64%);
+}
+
+section.four-card div.card:last-of-type {
+    border-color: hsl(212, 86%, 64%);
+}
+
+@media (max-width: 440px) {
+    section.four-card div.header {
+        margin-bottom: 20px;
+    }
+
+    section.four-card div.header h1 {
+        font-size: 1.5em;
+    }
+
+    section.four-card div.header h2 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 300px) {
+    section.four-card div.card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    section.four-card div.card img {
+        position: static;
+        padding: 15px 0 0 0;
+    }
+}
